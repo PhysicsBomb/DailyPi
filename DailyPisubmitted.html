@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<link rel="canonical" href="http://dailypi.tech/DailyPisubmitted.html" />
+</head>
+<script language="JavaScript">
+function getUrlVars() {
+	var vars = {};
+	var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+	return vars;
+}
+	function show(){
+		var a = getUrlVars()["Name"];
+		document.getElementById('dis1').innerHTML = a;
+	}
+	function show1(){
+		var b = getUrlVars()["Age"];
+		document.getElementById('dis2').innerHTML = b;
+	}
+	function show2(){
+		var c = getUrlVars()["Gender"];
+		document.getElementById('dis3').innerHTML = c;
+	}
+	function show3(){
+		var d = getUrlVars()["HAddress"];
+		document.getElementById('dis4').innerHTML = d;
+	}
+	function show4(){
+		var e = getUrlVars()["WAddress"];
+		document.getElementById('dis5').innerHTML = e;
+	}
+	function show5(){
+		var f = getUrlVars()["Name"];
+		document.getElementById('dis6').innerHTML = f;
+	}
+	function show6(){
+		var g = getUrlVars()["Name"];
+		document.getElementById('dis7').innerHTML = g;
+	}
+	function show7(){
+		var h = getUrlVars()["Name"];
+		document.getElementById('dis8').innerHTML = h;
+	}
+
+</script>
+<BODY>
+	<p><span id="dis1"></span></p>
+	<p><span id="dis2"></span></p>
+	<p><span id="dis3"></span></p>
+	<p><span id="dis4"></span></p>
+	<p><span id="dis5"></span></p>
+	<script language="JavaScript">
+		show();
+		show1();
+		show2();
+		show3();
+		show4();
+		show5();
+	</script>
+</BODY>
+</HTML>
