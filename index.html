@@ -13,38 +13,47 @@
         document.getElementById('display').innerHTML = 
                     document.getElementById("Name").value;
     }
+
     function showInput1() {
         document.getElementById('display1').innerHTML = 
                     document.getElementById("Age").value;
     }
+
     function showInput2() {
   		document.getElementById('display2').innerHTML = 
                     document.getElementById("Gender").value;
     }
+
     function showInput3() {
   		document.getElementById('display3').innerHTML = 
                     document.getElementById("HAddress").value;
     }
+
     function showInput4() {
   		document.getElementById('display4').innerHTML = 
                     document.getElementById("WAddress").value;
     }
+
     function showInput4() {
   		document.getElementById('display4').innerHTML = 
                     document.getElementById("WAddress").value;
     }
+
     function check1() {
     	var w = document.getElementById("News").checked;
     	document.getElementById('display5').innerHTML = w;
     }
+
     function check2() {
     	var x = document.getElementById("Weather").checked;
     	document.getElementById('display6').innerHTML = x;
     }
+
     function check3() {
     	var y = document.getElementById("Traffic").checked;
     	document.getElementById('display7').innerHTML = y;
     }
+
     function check4() {
     	var z = document.getElementById("Recipes").checked;
     	document.getElementById('display8').innerHTML = z;
@@ -66,21 +75,21 @@
 	</form>
 	<p>What would you like to be informed about?</p>
 	<form>
-		<input id="News" type="checkbox" name="News">News<br>
-		<input id="Weather" type="checkbox" name="Weather">Weather<br>
-		<input id="Traffic" type="checkbox" name="Traffic">Traffic<br>
-		<input id="Recipes" type="checkbox" name="Recipes">Recipes<br>
+		<p><label class="N"><input id="News" type="checkbox" name="News">News</label></p>
+		<p><label class="W"><input id="Weather" type="checkbox" name="Weather">Weather</label></p>
+		<p><label class="T"><input id="Traffic" type="checkbox" name="Traffic">Traffic</label></p>
+		<p><label class="R"><input id="Recipes" type="checkbox" name="Recipes">Recipes</label></p>
 	</form>
 	<input type="submit" onclick="showInput(); showInput1(); showInput2(); showInput3(); showInput4(); check1(); check2(); check3(); check4();"><br/>
 	<label>Your inputs:</label>
-	<p><span class="display" id="display"></span></p>
-	<p><span class="display1" id="display1"></span></p>
-	<p><span class="display2" id="display2"></span></p>
-	<p><span class="display3" id="display3"></span></p>
-	<p><span class="display4" id="display4"></span></p>
-	<p><span class="display5" id="display5"></span></p>
-	<p><span class="display6" id="display6"></span></p>
-	<p><span class="display7" id="display7"></span></p>
-	<p><span class="display8" id="display8"></span></p>
+	<p><span class="display" id="display" style="display:inline"></span></p>
+	<p><span class="display1" id="display1"  style="display:inline"></span></p>
+	<p><span class="display2" id="display2"  style="display:inline"></span></p>
+	<p><span class="display3" id="display3"  style="display:inline"></span></p>
+	<p><span class="display4" id="display4"  style="display:inline"></span></p>
+	<p><span class="display5" id="display5"  style="display:inline"></span></p>
+	<p><span class="display6" id="display6"  style="display:inline"></span></p>
+	<p><span class="display7" id="display7"  style="display:inline"></span></p>
+	<p><span class="display8" id="display8"  style="display:inline"></span></p>
 </BODY>
 </HTML>
