@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
 <HTML>
+<style type="text/css">
+	body div{
+		box-shadow: 20px 20px 20px #d3d3d3
+	}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
 <TITLE>Daily Pi</TITLE>
-<HEADER>Daily Pi</HEADER>
 <script language="JavaScript">
     function showInput() {
         document.getElementById('display').innerHTML = 
@@ -31,22 +37,27 @@
     	var w = document.getElementById("News").checked;
     	document.getElementById('display5').innerHTML = w;
     }
-     function check2() {
+    function check2() {
     	var x = document.getElementById("Weather").checked;
     	document.getElementById('display6').innerHTML = x;
     }
-     function check3() {
+    function check3() {
     	var y = document.getElementById("Traffic").checked;
     	document.getElementById('display7').innerHTML = y;
     }
-     function check4() {
+    function check4() {
     	var z = document.getElementById("Recipes").checked;
     	document.getElementById('display8').innerHTML = z;
     }
   </script>
 
 <BODY>
+	<div class="jumbotron">
+		<h1>Daily Pi</h1>
+			<h2>Know Your Day</h2>
+	</div>
 	<form>
+		<p>Register Yourself:</p>
 		<p>Name: <input id= "Name" type="text" name="Name"></p>
 		<p>Age: <input id="Age" type="number" name="Age"></p>
 		<p>Male or Female:<input id="Gender" type="text" name="Gender"></p>
@@ -62,14 +73,14 @@
 	</form>
 	<input type="submit" onclick="showInput(); showInput1(); showInput2(); showInput3(); showInput4(); check1(); check2(); check3(); check4();"><br/>
 	<label>Your inputs:</label>
-	<p><span id="display"></span></p>
-	<p><span id="display1"></span></p>
-	<p><span id="display2"></span></p>
-	<p><span id="display3"></span></p>
-	<p><span id="display4"></span></p>
-	<p><span id="display5"></span></p>
-	<p><span id="display6"></span></p>
-	<p><span id="display7"></span></p>
-	<p><span id="display8"></span></p>
+	<p><span class="display" id="display"></span></p>
+	<p><span class="display1" id="display1"></span></p>
+	<p><span class="display2" id="display2"></span></p>
+	<p><span class="display3" id="display3"></span></p>
+	<p><span class="display4" id="display4"></span></p>
+	<p><span class="display5" id="display5"></span></p>
+	<p><span class="display6" id="display6"></span></p>
+	<p><span class="display7" id="display7"></span></p>
+	<p><span class="display8" id="display8"></span></p>
 </BODY>
 </HTML>
