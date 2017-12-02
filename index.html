@@ -65,22 +65,20 @@
 		<h1>Daily Pi</h1>
 			<h2>Know Your Day</h2>
 	</div>
-	<form>
+	<form action="DailyPisubmitted.html" Method="GET">
 		<p>Register Yourself:</p>
 		<p>Name: <input id= "Name" type="text" name="Name"></p>
 		<p>Age: <input id="Age" type="number" name="Age"></p>
 		<p>Male or Female:<input id="Gender" type="text" name="Gender"></p>
 		<p>Home Address:<input id="HAddress" type="text" name="HAddress"></p>
 		<p>Work Address:<input id="WAddress" type="text" name="WAddress"></p>
-	</form>
 	<p>What would you like to be informed about?</p>
-	<form>
 		<p><label class="N"><input id="News" type="checkbox" name="News">News</label></p>
 		<p><label class="W"><input id="Weather" type="checkbox" name="Weather">Weather</label></p>
 		<p><label class="T"><input id="Traffic" type="checkbox" name="Traffic">Traffic</label></p>
 		<p><label class="R"><input id="Recipes" type="checkbox" name="Recipes">Recipes</label></p>
+		<input type="submit" value="Submit">
 	</form>
-	<input type="submit" onclick="showInput(); showInput1(); showInput2(); showInput3(); showInput4(); check1(); check2(); check3(); check4();"><br/>
 	<label>Your inputs:</label>
 	<p><span class="display0" id="display" style="display:inline"></span></p>
 	<p><span class="display10" id="display1"  style="display:inline"></span></p>
