@@ -1,0 +1,12 @@
+body {
+	text-align: center
+
+}
+.jumbotron {
+	font-family: PT Sans, Verdana;
+	background-image: url("https://pixabay.com/static/uploads/photo/2016/02/18/22/25/paris-1208274_960_720.jpg");
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 110%;
+}
