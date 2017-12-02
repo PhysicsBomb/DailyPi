@@ -32,16 +32,20 @@ vars[key] = value;
 		document.getElementById('dis5').innerHTML = e;
 	}
 	function show5(){
-		var f = getUrlVars()["Name"];
+		var f = getUrlVars()["News"];
 		document.getElementById('dis6').innerHTML = f;
-	}
+		}
 	function show6(){
-		var g = getUrlVars()["Name"];
+		var g = getUrlVars()["Weather"];
 		document.getElementById('dis7').innerHTML = g;
 	}
 	function show7(){
-		var h = getUrlVars()["Name"];
+		var h = getUrlVars()["Traffic"];
 		document.getElementById('dis8').innerHTML = h;
+	}
+	function show8(){
+		var i = getUrlVars()["Recipes"];
+		document.getElementById('dis9').innerHTML = i;
 	}
 
 </script>
@@ -51,6 +55,11 @@ vars[key] = value;
 	<p><span id="dis3"></span></p>
 	<p><span id="dis4"></span></p>
 	<p><span id="dis5"></span></p>
+	<p><span id="dis6"></span></p>
+	<p><span id="dis7"></span></p>
+	<p><span id="dis8"></span></p>
+	<p><span id="dis9"></span></p>
+
 	<script language="JavaScript">
 		show();
 		show1();
@@ -58,6 +67,9 @@ vars[key] = value;
 		show3();
 		show4();
 		show5();
+		show6();
+		show7();
+		show8();
 	</script>
 </BODY>
 </HTML>
