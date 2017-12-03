@@ -1,0 +1,6 @@
+x = open('Test.txt','w')
+x.write('Hi')
+x.close()
+y = open('Test.txt','r')
+print(y.read())
+y.close()
