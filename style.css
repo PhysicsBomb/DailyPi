@@ -4,11 +4,15 @@ body {
 }
 .jumbotron {
 	font-family: PT Sans, Verdana;
-	background-image: url("paris-1208274_960_720.jpg");
+	background-image: url("dailypi.jpg");
+	background-color: #C0C0C1;
 	height: 500px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 110%;
+	background-size: 30%;
+}
+.h1{
+	color: yellow;
 }
 .W{
  transition: box-shadow .3s;
@@ -39,4 +43,3 @@ body {
 .R:hover {
 	box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
-
